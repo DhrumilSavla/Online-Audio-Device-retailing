@@ -1,0 +1,59 @@
+<DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title></title>
+
+    <link rel="stylesheet" href="feedback.css" />
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="feedback.html">Contact Us</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button style="font-family: 'Poppins', sans-serif; font-size: medium; padding-right: 0;"><a href="product1.html">Products</a></button>
+                    <div class="dropdown-content">
+                        <a href="headphones.html">Headphones</a>
+                        <a href="earphones.html">Earphones</a>
+                        <a href="speakers.html">Speakers</a>
+                    </div>
+                </div>
+            </li>
+
+            <li id="name" style="float:left; padding-left: 20px; margin-bottom: 0;">
+                <a href="home.html"><img src="logo.png" style="height: 3.5vh;"></a>
+            </li>
+        </ul>
+    </div>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="checkout_logo.png" alt="" />
+            </div>
+
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form method="POST" action="final3.html">
+                    <input type="text" placeholder="Your Name" id="name" onkeyup="checkName()" required>
+                    <span id="name-error"></span>
+                    <input type="text" placeholder="Your Email" id="email" onkeyup="checkEmail()" required><br><br><br>
+                    <span id="email-error"></span>
+                    <textarea cols="30" rows="6" placeholder="Type Your Message" required></textarea>
+                    <button class="btn btn-primary" onclick="return checkForm()">Submit</button>
+                    <span id="submit-error"></span>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="feedback.js"></script>
+</body>
+</html>

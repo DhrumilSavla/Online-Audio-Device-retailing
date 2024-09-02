@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="feedback.html">Contact Us</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button style="font-family: 'Poppins', sans-serif; font-size: medium; padding-right: 0;"><a href="product1.html">Products</a></button>
+                    <div class="dropdown-content">
+                        <a href="headphones.html">Headphones</a>
+                        <a href="earphones.html">Earphones</a>
+                        <a href="speakers.html">Speakers</a>
+                    </div>
+                </div>
+            </li>
+
+            <li id="name" style="float:left; padding-left: 20px; margin-bottom: 0;">
+                <a href="home.html"><img src="logo.png" style="height: 3.5vh;"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="box" style="height: 500px;">
+            <div class="form">
+                <form name="newform" action="backup2.php" method="post" onsubmit=" return formvalidate()">
+                    <h2>Sign up</h2>
+                    <div class="inputBox">
+                        <input type="email" name="email" required>
+                        <span>Email id</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="u_name" required>
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="pass" required>
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <a href="booking.html"><input type="submit" value="Sign up" style="margin-top: 25px;"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function formvalidate() {
+            let username = document.forms["newform"]["u_name"].value;
+            let password = document.forms["newform"]["pass"].value;
+            let email = document.forms["newform"]["email"].value;
+            let flag = 0;
+            if (username.length < 5) {
+                alert("Enter correct username");
+                flag++;
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Enter strong password");
+                flag++;
+                return false;
+            }
+            if (email.length == 0 || !email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)) {
+                alert("Enter valid Email Address");
+                return false;
+            }
+            if (flag == 0) {
+                return true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="feedback.html">Contact Us</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button style="font-family: 'Poppins', sans-serif; font-size: medium; padding-right: 0;"><a href="product1.html">Products</a></button>
+                    <div class="dropdown-content">
+                        <a href="headphones.html">Headphones</a>
+                        <a href="earphones.html">Earphones</a>
+                        <a href="speakers.html">Speakers</a>
+                    </div>
+                </div>
+            </li>
+
+            <li id="name" style="float:left; padding-left: 20px; margin-bottom: 0;">
+                <a href="home.html"><img src="logo.png" style="height: 3.5vh;"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+
+        <form action="final.html">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="mr. john deo" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="january" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="text" placeholder="2022" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234" required>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Complete payment" class="submit-btn">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

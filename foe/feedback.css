@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.html {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url('backgr.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+li:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#navbar {
+  width: 100%;
+  height: 6vh;
+  background-color: black;
+}
+
+li {
+  display: inline;
+  float: right;
+  margin-right: 30px;
+  margin-top: 12px;
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-weight: small;
+
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+
+}
+
+#contact {
+  padding: 80px 0;
+  /* background: rgb(226, 226, 226); */
+
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+
+}
+
+
+.contact-img {
+  width: 50%;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-img img {
+  display: block;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+
+}
+
+.form-container {
+
+  padding: 16px;
+  width: 50%;
+  margin: auto;
+
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 16px 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 16px;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 16px 0;
+  resize: none;
+
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 16px;
+  margin-top: -19.2px;
+
+}
+
+.form-container a {
+  font-size: 20.8px;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 28.8px;
+  padding: 41.6px;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  .contact-img {
+    width: 90%;
+    margin: 48px auto;
+  }
+
+
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  width: auto;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #000000;
+  background-color: #e4e4e4;
+}

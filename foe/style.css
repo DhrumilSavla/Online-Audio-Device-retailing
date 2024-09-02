@@ -1,0 +1,315 @@
+:root {
+    --primary: rgba(255, 255, 255, 0.05);
+    --secondary: #0d7377;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: poppins;
+    width: 100%;
+}
+
+#navbar li:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+#navbar a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#navbar {
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    font-size: medium;
+}
+
+#navbar li {
+    display: inline;
+    float: right;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+
+.slider {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    font: normal 1rem sans-serif;
+    padding-left: 60px;
+}
+
+.card {
+    position: relative;
+    width: 17rem;
+    height: 23rem;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    border: 1rem solid transparent;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    transition: .5s ease-in-out;
+    color: white;
+}
+
+.card:hover {
+    border: .1rem solid var(--secondary);
+    transform: scale(1.05);
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-content::before {
+    position: absolute;
+    content: "";
+    background-color: var(--secondary);
+    border-radius: 50%;
+    top: -6%;
+    right: -6%;
+    width: 9rem;
+    height: 9rem;
+    transition: .5s ease-in-out;
+}
+
+.card-content::after {
+    position: absolute;
+    content: "";
+    background-color: var(--secondary);
+    border-radius: 50%;
+    bottom: -6%;
+    left: -6%;
+    width: 5rem;
+    height: 5rem;
+    transition: .5s ease-in-out;
+}
+
+.card-content:hover::before {
+    transform: scale(1.8);
+}
+
+.card-content:hover::after {
+    transform: scale(0);
+}
+
+.card-img,
+.card-title {
+    transform: translateY(4rem);
+    transition: .5s ease-in-out;
+}
+
+.card-img {
+    width: auto;
+    height: 12rem;
+    margin: 0;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-family: poppins;
+    color: white;
+    font-weight: bold;
+    transition-delay: .2s;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.card-body,
+.card-footer {
+    transform: translateY(8rem);
+    transition: .5s ease-in-out;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition-delay: .2s;
+}
+
+.card:hover .card-img,
+.card:hover .card-title,
+.card:hover .card-body,
+.card:hover .card-footer {
+    transform: translateY(0);
+}
+
+.card-footer {
+    transition-delay: .3s;
+}
+
+.star {
+    font-size: 1.4rem;
+    color: gold;
+}
+
+.card-price {
+    font: bolder 1.5rem sans-serif;
+}
+
+.btn {
+    background-color: unset;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin-bottom: 3px;
+}
+
+.btn-border {
+    border: .1rem solid var(--secondary);
+}
+
+.add-to-cart {
+    font-size: small;
+    letter-spacing: 0px;
+}
+
+.add-to-cart:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-success {
+    font-size: medium;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    width: auto;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #000000;
+    background-color: #e4e4e4;
+}
+
+.sorting {
+    align-content: right;
+    text-align: right;
+}
+
+.sorting .dropdown {
+    margin-top: 5px;
+    margin-right: 70px;
+    width: auto;
+    text-align: left;
+    font-family: poppins;
+    font-size: large;
+}
+
+.sorting .dropdown button {
+    background-color: transparent;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    overflow: auto;
+    width: 200%;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.sorting .dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: 140%;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.sorting .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sorting .dropdown:hover button {
+    /* border-radius: 10px; */
+    transition: ease 200ms;
+    background-color: var(--secondary);
+    /* color: black; */
+}
+
+.dropdown-content a {
+    display: block;
+    color: gray;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #000000;
+    background-color: #e4e4e4;
+}
+
+.swiper-wrapper {
+    height: 100vh;
+}

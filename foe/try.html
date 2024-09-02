@@ -1,0 +1,350 @@
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="try.css">
+</head>
+
+<body style="margin: 0;">
+    <div id="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="feedback.html">Contact Us</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button style="font-family: 'Poppins', sans-serif; font-size: medium;"><a href="product1.html">Products</a></button>
+                    <div class="dropdown-content">
+                        <a href="headphones.html">Headphones</a>
+                        <a href="earphones.html">Earphones</a>
+                        <a href="speakers.html">Speakers</a>
+                    </div>
+                </div>
+            </li>
+
+            <li id="name" style="float:left; padding-left: 20px; margin-bottom: 0;">
+                <a href="home.html"><img src="logo.png" style="height: 3.5vh;"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="jumbotron">
+        <svg id="bgblob" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;" filter="blur(0px)" transform="rotate(0)">                        <defs>                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">                            <stop offset="0%" style="stop-color: rgb(52, 5, 70);"></stop>                            <stop offset="100%" style="stop-color: rgb(4, 5, 46);"></stop>                        </linearGradient>                        </defs>                                            <path id="blob" fill="url(#gradient)" style="opacity: 1;"><animate attributeName="d" dur="8s" repeatCount="indefinite" values="M414.53769,321.38989Q420.37096,392.77979,350.00938,405.59743Q279.64779,418.41507,213.62261,422.99375Q147.59743,427.57242,94.94338,376.434Q42.28934,325.29559,42.19191,249.67298Q42.09448,174.05036,91.48437,117.78308Q140.87426,61.5158,214.61636,47.15422Q288.35846,32.79263,348.05974,75.5158Q407.76103,118.23897,408.23272,184.11949Q408.70441,250,414.53769,321.38989Z;M404.21696,312.89783Q400.5999,375.79567,344.18719,420.60848Q287.77447,465.42129,222.25959,438.51488Q156.7447,411.60848,114.36806,363.06382Q71.99143,314.51917,65.98083,247.80853Q59.97023,181.09788,105.72982,130.10217Q151.4894,79.10645,216.18088,77.25959Q280.87235,75.41272,335.88295,103.82341Q390.89355,132.2341,399.36378,191.11705Q407.83401,250,404.21696,312.89783Z;M443.46373,322.92581Q424.06453,395.85162,352.29275,408.54192Q280.52096,421.23222,209.43547,432.55323Q138.34998,443.87423,108.93547,378.01696Q79.52096,312.15968,50.50966,239.62741Q21.49835,167.09515,80.22256,112.52096Q138.94677,57.94677,211.78709,57.03792Q284.62741,56.12906,342.97339,89.43146Q401.31936,122.73387,432.09114,186.36693Q462.86293,250,443.46373,322.92581Z;M429,328Q437,406,362,433Q287,460,218,442Q149,424,122.5,365Q96,306,74.5,242Q53,178,94.5,115Q136,52,206.5,73Q277,94,347.5,101.5Q418,109,419.5,179.5Q421,250,429,328Z;M402.96858,305.89372Q383.43068,361.78743,330.92976,387.4658Q278.42884,413.14418,202.60721,438.39372Q126.78558,463.64325,93.53789,391.42791Q60.29021,319.21257,78.64603,256.64233Q97.00185,194.07209,128.64418,144.10813Q160.28651,94.14418,219.21534,92.06839Q278.14418,89.9926,343.5342,103.10536Q408.92421,116.21812,415.71534,183.10906Q422.50647,250,402.96858,305.89372Z;M453.57191,328.53752Q437.08754,407.07503,364.57816,448.74386Q292.06878,490.41269,219.55628,459.1657Q147.04377,427.91871,108.99375,371.46874Q70.94372,315.01876,56.52814,244.52814Q42.11255,174.03752,86.02814,107.96874Q129.94372,41.89995,209.98749,31.84993Q290.03126,21.79991,346.01876,71.89683Q402.00625,121.99375,436.03126,185.99687Q470.05628,250,453.57191,328.53752Z;M414.53769,321.38989Q420.37096,392.77979,350.00938,405.59743Q279.64779,418.41507,213.62261,422.99375Q147.59743,427.57242,94.94338,376.434Q42.28934,325.29559,42.19191,249.67298Q42.09448,174.05036,91.48437,117.78308Q140.87426,61.5158,214.61636,47.15422Q288.35846,32.79263,348.05974,75.5158Q407.76103,118.23897,408.23272,184.11949Q408.70441,250,414.53769,321.38989Z"></animate></path></svg>
+        <svg id="bgblob2" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg" style="opacity: 1;" filter="blur(0px)" transform="rotate(0)">                        <defs>                        <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">                            <stop offset="0%" style="stop-color: rgb(121, 14, 116);"></stop>                            <stop offset="100%" style="stop-color: rgb(30, 5, 60);"></stop>                        </linearGradient>                        </defs>                                            <path id="blob" fill="url(#gradient2)" style="opacity: 1;"><animate attributeName="d" dur="10s" repeatCount="indefinite" values="M414.53769,321.38989Q420.37096,392.77979,350.00938,405.59743Q279.64779,418.41507,213.62261,422.99375Q147.59743,427.57242,94.94338,376.434Q42.28934,325.29559,42.19191,249.67298Q42.09448,174.05036,91.48437,117.78308Q140.87426,61.5158,214.61636,47.15422Q288.35846,32.79263,348.05974,75.5158Q407.76103,118.23897,408.23272,184.11949Q408.70441,250,414.53769,321.38989Z;M404.21696,312.89783Q400.5999,375.79567,344.18719,420.60848Q287.77447,465.42129,222.25959,438.51488Q156.7447,411.60848,114.36806,363.06382Q71.99143,314.51917,65.98083,247.80853Q59.97023,181.09788,105.72982,130.10217Q151.4894,79.10645,216.18088,77.25959Q280.87235,75.41272,335.88295,103.82341Q390.89355,132.2341,399.36378,191.11705Q407.83401,250,404.21696,312.89783Z;M443.46373,322.92581Q424.06453,395.85162,352.29275,408.54192Q280.52096,421.23222,209.43547,432.55323Q138.34998,443.87423,108.93547,378.01696Q79.52096,312.15968,50.50966,239.62741Q21.49835,167.09515,80.22256,112.52096Q138.94677,57.94677,211.78709,57.03792Q284.62741,56.12906,342.97339,89.43146Q401.31936,122.73387,432.09114,186.36693Q462.86293,250,443.46373,322.92581Z;M429,328Q437,406,362,433Q287,460,218,442Q149,424,122.5,365Q96,306,74.5,242Q53,178,94.5,115Q136,52,206.5,73Q277,94,347.5,101.5Q418,109,419.5,179.5Q421,250,429,328Z;M402.96858,305.89372Q383.43068,361.78743,330.92976,387.4658Q278.42884,413.14418,202.60721,438.39372Q126.78558,463.64325,93.53789,391.42791Q60.29021,319.21257,78.64603,256.64233Q97.00185,194.07209,128.64418,144.10813Q160.28651,94.14418,219.21534,92.06839Q278.14418,89.9926,343.5342,103.10536Q408.92421,116.21812,415.71534,183.10906Q422.50647,250,402.96858,305.89372Z;M453.57191,328.53752Q437.08754,407.07503,364.57816,448.74386Q292.06878,490.41269,219.55628,459.1657Q147.04377,427.91871,108.99375,371.46874Q70.94372,315.01876,56.52814,244.52814Q42.11255,174.03752,86.02814,107.96874Q129.94372,41.89995,209.98749,31.84993Q290.03126,21.79991,346.01876,71.89683Q402.00625,121.99375,436.03126,185.99687Q470.05628,250,453.57191,328.53752Z;M414.53769,321.38989Q420.37096,392.77979,350.00938,405.59743Q279.64779,418.41507,213.62261,422.99375Q147.59743,427.57242,94.94338,376.434Q42.28934,325.29559,42.19191,249.67298Q42.09448,174.05036,91.48437,117.78308Q140.87426,61.5158,214.61636,47.15422Q288.35846,32.79263,348.05974,75.5158Q407.76103,118.23897,408.23272,184.11949Q408.70441,250,414.53769,321.38989Z"></animate></path></svg>
+        <div class="float">
+            <img src="headphones.png" id="headphones" />
+        </div>
+        <div class="float2">
+            <img src="earphones.png" id="earphones" />
+        </div>
+        <div id="main">
+            <h1 id="text">Enter the world of audio</h1>
+            <div style="text-align: center;">
+                <a href="#product-spotlight"><button id="explore">Explore</button><br></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" id="product-spotlight">
+        <div class="mySwiper">
+            <div class="main-wrapper swiper-wrapper">
+                <div class="main swiper-slide" id="beach">
+                    <div class="left-side">
+                        <div class="main-wrapper">
+                            <h3 class="main-header">Beats Headphones</h3>
+                            <h1 class="main-title">Studio3</h1>
+                            <h2 class="main-subtitle">₹ 33,000</h2>
+                        </div>
+                        <div class="main-content">
+                            <div class="main-content__title">Beats Studio<sup>3</sup> Wireless over-ear headphones delivers premium sound while blocking external noise with Active Noise Cancelling</div>
+                            <div class="main-content__subtitle">Beats Studio<sup>3</sup> Wireless supports spatial audio for immersive music – delivering a surround sound experience that you can take with you anywhere.</div>
+                            <a href="product1.html">
+                                <div class="more-menu">
+                                    Shop Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="-5" y1="12" x2="19" y2="12" />
+                  <line x1="15" y1="16" x2="19" y2="12" />
+                  <line x1="15" y1="8" x2="19" y2="12" />
+                </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="right-side__img" style="padding-left: 100px; padding-top: 20px;">
+                            <img class="bottle-bg" src="https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Beach_1920.jpg?v=1029210661698833530" alt="">
+                            <img class="bottle-img" src="headphone4.png" style="height: 55%; padding-left: 150px;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="main swiper-slide" id="savanna">
+                    <div class="left-side">
+                        <div class="main-wrapper">
+                            <h3 class="main-header">Boat Speakers</h3>
+                            <h1 class="main-title" style="width: 600px;">Stone 620</h1>
+                            <h2 class="main-subtitle">₹ 3,000</h2>
+                        </div>
+                        <div class="main-content">
+                            <div class="main-content__title">Plug into Nirvana!
+                            </div>
+                            <div class="main-content__subtitle">12 W stereo sound gives the right bass and clarity to your music. It delivers excellent stereo sound designed by acoustic experts for a complete immersive listening experience.</div>
+                            <a href="product1.html">
+                                <div class="more-menu">
+                                    Shop Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="-5" y1="12" x2="19" y2="12" />
+                  <line x1="15" y1="16" x2="19" y2="12" />
+                  <line x1="15" y1="8" x2="19" y2="12" />
+                </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="right-side__img" style="padding-left: 100px; padding-top: 20px;">
+                            <img class="bottle-bg" src="https://images.unsplash.com/photo-1613109526778-27605f1f27d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="">
+                            <img class="bottle-img" src="S1.png" style="height: 55%; padding-left: 150px;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="main swiper-slide" id="glacier">
+                    <div class="left-side">
+                        <div class="main-wrapper">
+                            <h3 class="main-header">Apple Beats Earphones</h3>
+                            <h1 class="main-title">Powerbeats Pro</h1>
+                            <h2 class="main-subtitle">₹ 12,000</h2>
+                        </div>
+                        <div class="main-content">
+                            <div class="main-content__title">Totally wireless Powerbeats Pro earphones are built to keep you moving
+                            </div>
+                            <div class="main-content__subtitle">Powerbeats Pro supports spatial audio for immersive music – delivering a surround sound experience that you can take with you anywhere.</div>
+                            <a href="product1.html">
+                                <div class="more-menu">
+                                    Shop Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="-5" y1="12" x2="19" y2="12" />
+                  <line x1="15" y1="16" x2="19" y2="12" />
+                  <line x1="15" y1="8" x2="19" y2="12" />
+                </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="right-side__img" style="padding-left: 100px; padding-top: 20px;">
+                            <img class="bottle-bg" src="https://www.discover-the-world.com/app/uploads/2018/05/chile-patagonia-calving-glacier-is-1150x863-c-default.jpg" alt="">
+                            <img class="bottle-img" src="earphone8.png" style="height: 55%; padding-left: 150px;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="main swiper-slide" id="coral">
+                    <div class="left-side">
+                        <div class="main-wrapper">
+                            <h3 class="main-header">Sony Headphones</h3>
+                            <h1 class="main-title">WH-1000XM3</h1>
+                            <h2 class="main-subtitle">₹ 21,000</h2>
+                        </div>
+                        <div class="main-content">
+                            <div class="main-content__title">ONLY MUSIC. NOTHING ELSE.
+                            </div>
+                            <div class="main-content__subtitle">WH-1000XM3 headphones take you even deeper into silence with further improvements to our advanced noise cancellation, and smart listening that adjusts to your situation.</div>
+                            <a href="product1.html">
+                                <div class="more-menu">
+                                    Shop Now
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="-5" y1="12" x2="19" y2="12" />
+                  <line x1="15" y1="16" x2="19" y2="12" />
+                  <line x1="15" y1="8" x2="19" y2="12" />
+                </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="right-side__img" style="padding-left: 100px; padding-top: 20px;">
+                            <img class="bottle-bg" src="https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3260&q=80" alt="">
+                            <img class="bottle-img" src="headphone3.png" style="height: 50%; padding-left: 150px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <div class="swiper-button swiper-prev-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+            </div>
+            <div class="swiper-button swiper-next-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="products">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+                <p class="text">
+                    Welcome to Sphinx, the audio gadgets company that brings you the latest and greatest in audio technology. At Sphinx, we believe that everyone should have access to high-quality audio products, whether you're a professional musician or a casual listener.
+                    That's why we're committed to producing the best audio gadgets that cater to every individual's needs. Our mission is to provide the perfect blend of innovation, quality, and affordability to ensure that our customers always have the
+                    best audio experience. We are passionate about audio and are constantly pushing the boundaries of what is possible with our cutting-edge technology. Our team of experts works tirelessly to develop and refine our products, so you can
+                    enjoy crystal-clear sound no matter where you are. At Sphinx, we strive to make a positive impact on the world by creating products that are sustainable, durable, and long-lasting. We believe that we have a responsibility to the planet,
+                    and we do our part by using eco-friendly materials and minimizing waste. We understand that our customers are the heart of our business, and we go above and beyond to ensure their satisfaction. Thank you for choosing Sphinx for all
+                    of your audio gadget needs. We are committed to providing you with the best audio experience and look forward to being a part of your audio journey.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <section class="swiper objSwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide">
+                    <div class="card_img">
+                        <img src="images/Mrwhosethebose.jpg" alt="card image">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card__title">Youtuber</span>
+                        <span class="card__name">Mrwhosetheboss</span>
+                        <p class="card__text">I've been impressed with Sphinx's innovative approach to Audio industry. They're truly making a difference, and I'm honored to be associated with them.</p>
+
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_img">
+                        <img src="images/travis.webp" alt="card image">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card__title">Artist</span>
+                        <span class="card__name">Travis Scott</span>
+                        <p class="card__text">You can't buy swag. But i bought something equivalent from Sphinx.</p>
+
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_img">
+                        <img src="images/stan.webp" alt="card image">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card__title">Indian Rapper</span>
+                        <span class="card__name">MC Stan</span>
+                        <p class="card__text">Sphinx audio bole toh ekdam op maal bechte. Apni poori gang ke paas inka saaman hai. Love from P town.</p>
+
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_img">
+                        <img src="images/mkbhd.jpg" alt="card image">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card__title">Youtuber</span>
+                        <span class="card__name">Marques Brownlee</span>
+                        <p class="card__text">I believe that Sphinx is making a real difference in the world. Their commitment to Sphinx's mission is inspiring, and I'm proud to support them.</p>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card_img">
+                        <img src="images/Ranveer.jpg" alt="card image">
+                    </div>
+
+                    <div class="card_content">
+                        <span class="card__title">Youtuber</span>
+                        <span class="card__name">Beer Biceps</span>
+                        <p class="card__text">If you're looking for good audio devices, Sphinx is the perfect place for your needs. Their wide range of products will help you meet your needs.</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".objSwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-next-button",
+                prevEl: ".swiper-prev-button"
+            },
+            effect: "fade",
+            loop: "infinite",
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            }
+        });
+
+        swiper.on('slideChange', function(sld) {
+            document.body.setAttribute('data-sld', sld.realIndex);
+        })
+    </script>
+
+
+    <script>
+        let image = document.getElementById('headphones');
+        let blob = document.getElementById('bgblob');
+        let image2 = document.getElementById('earphones');
+        let blob2 = document.getElementById('bgblob2');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            image.style.marginLeft = 130 + (value * 5) + 'px';
+            image.style.marginTop = 340 + (value * 1.6) + 'px';
+            blob.style.marginLeft = 0 + (value * 5) + 'px';
+            blob.style.marginTop = 230 + (value * 1.6) + 'px';
+            image2.style.marginLeft = 1130 - (value * 5) + 'px';
+            image2.style.marginTop = 20 + (value * 0.2) + 'px';
+            blob2.style.marginLeft = 1030 - (value * 5) + 'px';
+            blob2.style.marginTop = -70 + (value * 0.2) + 'px';
+
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="feedback.html">Contact Us</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button style="font-family: 'Poppins', sans-serif; font-size: medium; padding-right: 0;"><a href="product1.html">Products</a></button>
+                    <div class="dropdown-content">
+                        <a href="headphones.html">Headphones</a>
+                        <a href="earphones.html">Earphones</a>
+                        <a href="speakers.html">Speakers</a>
+                    </div>
+                </div>
+            </li>
+
+            <li id="name" style="float:left; padding-left: 20px; margin-bottom: 0;">
+                <a href="home.html"><img src="logo.png" style="height: 3.5vh;"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="box">
+            <div class="form">
+                <form name="newform" action="backup.php" method="post" onsubmit="return formvalidate()">
+                    <h2>Log In</h2>
+                    <div class="inputBox">
+                        <input type="text" name="username" required>
+                        <span>Username</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="pass" required>
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <div class="links">
+                        <a href="#">Forgot Password</a>
+                        <a href="signup.html">Sign up</a>
+                    </div>
+                    <a href="booking.html"><input type="submit" value="Login"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function formvalidate() {
+            let u_name = document.forms["newform"]["username"].value;
+            let password = document.forms["newform"]["pass"].value;
+
+            let flag = 0;
+            if (u_name.length < 5) {
+                alert("Write correct username");
+                flag++;
+                return false;
+            }
+            if (password.length < 6) {
+                alert("wrong password");
+                flag++;
+                return false;
+            }
+            if (flag == 0) {
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>

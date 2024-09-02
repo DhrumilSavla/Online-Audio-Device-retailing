@@ -1,0 +1,87 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <link rel="stylesheet" href="checkout.css">
+      <title></title>
+    </head>
+    <body>
+      
+    <div class="mainscreen">
+      <div class="card">
+        <div class="leftside">
+          <img src="checkout_logo.png" class="logo"/>
+        </div>
+        <div class="rightside">
+          <form method="POST" action="payment.html">
+            <h1> Billing Details</h1>
+            <p>Returning customer? <a href="login.html">Click here to login</a></p>
+
+            
+              <p>Name*</p>
+              <input type="text" class = "inputbox" id="name" onkeyup="checkName()">
+              <span id="name-error"></span>
+              
+            <p>Company Name</p>
+            <input type="text" class = "inputbox" name="company" id="company" required>
+
+            <p>Address*</p>
+            <input type="text" class = "inputbox" name="address" id="address" required><br>
+            <input type="text" class = "inputbox" name="address" id="address2" placeholder="Optional">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 60px;"> 
+            <div>
+            <p>City*</p>
+            <input type="text" class = "inputbox" name="city" id="city" required></div>
+            <div>
+            <p>State*</p>
+              <select class = "inputbox" id = "state" required>
+                <option value="">Please select a state</option>
+                <option value="ab">Andhra Pradesh</option>
+                <option value="bc">Arunachal Pradesh</option>
+                <option value="mb">Assam</option>
+                <option value="nb">Bihar</option>
+                <option value="nl">Chattisgarh</option>
+                <option value="ns">Goa</option>
+                <option value="on">Gujarat</option>
+                <option value="pe">Haryana</option>
+                <option value="qc">Himachal Pradesh</option>
+                <option value="sk">Jharkand</option>
+                <option value="k">Karnataka</option>
+              </select></p>
+            </div>
+            </div>
+              <p>Postcode*</p>
+              <input type="text" class = "inputbox" id="postcode" placeholder="Postcode / Zip"  onkeyup="checkPostcode()">
+              <span id="postcode-error"></span>
+              <br>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 60px;"> 
+              <div>
+              <p>Email*</p>
+              <input type="text" class = "inputbox" placeholder="rohan@gmail.com" id="email" onkeyup="checkEmail()">
+              <span id="email-error"></span>
+            </div>
+              <div>
+              <p>Phone*</p>
+              <input type="text" class = "inputbox" placeholder="+91 XXXXX XXXXX" id="phone" onkeyup="checkPhone()">
+              <span id="phone-error"></span>
+            </div>
+            </div>
+
+            <h3>New Account</h3>
+            <p>Create an account?<input type="checkbox" value="check" id="checkbox" onclick="return checkToggle()"></p><br>
+            
+            <p>Order Notes</p>
+            <textarea name="notes" class = "inputbox" id="notes" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+
+              <p></p>
+            <button class="button" onclick="return checkForm()">Proceed to Payment</button>
+            <span id="submit-error"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      <script src="checkout.js"></script>
+    </body>
+    </html>
+    
